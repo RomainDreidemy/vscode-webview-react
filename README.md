@@ -17,6 +17,18 @@ yarn run build
 ```
 And then press F5, in Extension Development Host session, run `Start React Webview` command from command palette.
 
+### Docker
+
+If you don't want to install nodejs and yarn, you can use docker to build the project.
+
+```shell
+make up # start docker container
+make install # install yarn dependencies
+make watch # watch file changes and build
+```
+
+If you want to kill your docker container, run `make down`.
+
 ## Under the hood
 
 Things we did on top of Create React App TypeScript template
